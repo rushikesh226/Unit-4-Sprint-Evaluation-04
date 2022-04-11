@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        #navbar{
+            display: flex;
+            justify-content: space-around;
+            color: rgb(52, 138, 138);
+        }
+        h2{
+            text-align: center;
+        }
+        form{
+            width: 15%;
+            height: auto;
+            margin: auto;
+        }
+        button{
+            background-color: black;
+            color: white;
+            width: 100px;
+            height: 30px;
+            border-radius: 15px;
+            margin-left: 40px;
+        }
+        input{
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <h1>Home</h1>
+        <h1>Contact List</h1>
+        <h1>Favourites</h1>
+    </div>
+    <h2>Enter Your Contact Details</h2>
+    <form>
+        <input type="text" placeholder="Enter Contact Name">
+        <br>
+        <br>
+        <input type="number" placeholder="Enter Mobile Number">
+        <br>
+        <br>
+        <select name="typeofcontact" id="sel">
+            <option value="family">Family</option>
+            <option value="friends">Friends</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <br>
+        <button onclick="alert('Added contact to your contact list')">Submit</button>
+    </form>
+</body>
+</html>
